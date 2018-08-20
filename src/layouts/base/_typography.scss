@@ -1,0 +1,21 @@
+.heading-primary {
+  text-align: center;
+  padding: 5rem;
+  &-main {
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 3.5rem;
+    display: block;
+  }
+  &-secondary {
+    text-transform: uppercase;
+    color: $color-white;
+    font-size: 1.5rem;
+  }
+}
+
+// .font {
+//   &-small {
+//     font-size: 1.4rem !important;
+//   }
+// }

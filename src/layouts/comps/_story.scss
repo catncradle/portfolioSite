@@ -1,0 +1,39 @@
+.story {
+  &-left {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    &-box {
+      width: 30vw;
+      font-size: 2rem;
+      text-align: center;
+      opacity: 0.7;
+      animation-name: moveInRight;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-out;
+    }
+  }
+  &-right {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    &-box {
+      width: 30vw;
+      font-size: 2rem;
+      text-align: center;
+      opacity: 0.7;
+      animation-name: moveInLeft;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-out;
+    }
+  }
+}

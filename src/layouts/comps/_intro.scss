@@ -1,0 +1,28 @@
+.main {
+  margin-top: -3rem;
+  position: relative;
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-black, 0.4) 50%,
+      transparent 50%
+    ),
+    url(../img/huskyphoto.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  height: 110vh;
+  width: 100vw;
+  text-align: center;
+  &-content {
+    position: absolute;
+    width: 45rem;
+    max-width: calc(100% - 4em);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
