@@ -1,0 +1,28 @@
+.portfolio {
+  &-header {
+    font-size: 4rem;
+    width: 100vw;
+  }
+  &-items {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  &-item {
+    flex: 1;
+    object-fit: contain;
+  }
+  &-image {
+    object-fit: contain;
+    transition: all 0.7s;
+    &:hover {
+      width: 100%;
+      -webkit-filter: brightness(70%);
+      // height: 100%;
+      // position: absolute;
+      background-color: #000;
+      opacity: 0.5;
+      // border-radius: 30px;
+    }
+  }
+}

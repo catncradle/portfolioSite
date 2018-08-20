@@ -1,15 +1,4 @@
 import React from 'react';
-import {
-  education,
-  fireBase,
-  linkedIn,
-  react,
-  cat,
-  lifeGuard,
-  swimming,
-  medical,
-  professor,
-} from '../components/imgPng/index';
 
 const timelineEle = ({ title, text, direction, hidden, icon }) => {
   return (

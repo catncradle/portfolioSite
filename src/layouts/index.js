@@ -41,6 +41,7 @@ const Layout = ({ children, data }) => (
     <StoryComp info={infoFile.one} />
     <StoryComp info={infoFile.two} />
     <Timeline />
+    <Portfolio />
   </div>
 );
 
