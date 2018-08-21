@@ -1,0 +1,33 @@
+.flex {
+  // flex: 1 1 0;
+  &-col {
+    display: flex;
+    flex-direction: column;
+    // object-fit: contain;
+    flex: 1 1 0;
+    // min-width: 100%;
+    // max-width: 100;
+    // justify-content: center;
+  }
+  &-row {
+    display: flex;
+    height: 100%;
+    // align-items: center;
+  }
+  &-grow {
+    flex: 1 1 0;
+    // min-width: 100%;
+    // max-width: 100;
+    // object-fit: contain;
+  }
+}
+
+.justify {
+  &-end {
+    justify-content: space-between;
+  }
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}

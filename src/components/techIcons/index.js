@@ -3,3 +3,7 @@ export { default as node } from './node.png';
 export { default as psql } from './psql.png';
 export { default as googleMaps } from './googleMaps.png';
 export { default as fireBase } from './firebase.png';
+export { default as github } from './github.png';
+export { default as medium } from './medium.png';
+export { default as email } from './email.png';
+export { default as linkedin } from './linkedin.png';

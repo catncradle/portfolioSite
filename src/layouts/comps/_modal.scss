@@ -21,27 +21,3 @@
     flex: 1;
   }
 }
-
-.flex {
-  &-col {
-    display: flex;
-    flex-direction: column;
-    // object-fit: contain;
-    flex: 1 1 0;
-    // min-width: 100%;
-    // max-width: 100;
-    // justify-content: center;
-  }
-  &-row {
-    display: flex;
-    // min-width: 100%;
-    // max-width: 100;
-    // flex: 1;
-  }
-  &-grow {
-    flex: 1 1 0;
-    // min-width: 100%;
-    // max-width: 100;
-    // object-fit: contain;
-  }
-}

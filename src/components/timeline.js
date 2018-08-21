@@ -61,7 +61,7 @@ const stuff = [
 const time = () => {
   return (
     <div className="timeline">
-      <h1 className="timeline-header">
+      <h1 className="timeline-header center">
         Work/Experience... tap title for more info
       </h1>
       <section className="timeline-container center-align">

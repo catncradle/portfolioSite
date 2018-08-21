@@ -8,6 +8,7 @@ import StoryComp from '../components/storyComp';
 import VerticalTimeline from '../components/verticalTimeline';
 import Timeline from '../components/timeline';
 import Portfolio from '../components/portfolio';
+import Footer from '../components/footer';
 
 import './index.scss';
 
@@ -31,10 +32,6 @@ const infoFile = {
   },
 };
 
-// I am a Behavioral Research Analyst turned Software Engineer with a passion for creating and telling stories. In January 2018, I was accepted into the Web Development Fellowship (WDF) at Fullstack Academy in conjunction with the NYC Tech Talent Pipeline - with an acceptance rate of under 6%, it was almost twice as difficult to get accepted into WDF compared to Fullstack Academy. Graduating in July 2018, I couldn't have had a better environment to learn the necessary skills to become a well-rounded software engineer.
-
-// On the other side of my computer screen, I am an avid crossfitter with a focus on olympic weightlifting and powerlifting. Talk to me about fitness, getting outdoors, or your favorite lifts. I also enjoy watching re-runs of The Office and outdoor activities such as snowboarding, going on hikes, or any water activity. My Myers-Briggs type is: ENTJ.
-
 const Layout = ({ children, data }) => (
   <div className="">
     <Helmet
@@ -53,6 +50,7 @@ const Layout = ({ children, data }) => (
     <Timeline />
     <Portfolio />
     <StoryComp info={infoFile.two} />
+    <Footer />
   </div>
 );
 

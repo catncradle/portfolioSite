@@ -1,0 +1,11 @@
+.footer {
+  // background-color: white;
+  // background: transparentize($color-white, 0.05);
+  height: 15rem;
+  &-row {
+    align-items: center;
+  }
+  &-icons {
+    height: 40%;
+  }
+}
