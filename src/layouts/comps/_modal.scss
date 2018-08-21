@@ -1,0 +1,53 @@
+.modal {
+  // max-width: 100%;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    // min-width: 50%;
+    // max-width: 50%;
+  }
+  &-header {
+    text-align: center;
+  }
+  &-row {
+    display: flex;
+
+    &-side {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-child {
+    flex: 1;
+  }
+}
+
+.flex {
+  &-col {
+    display: flex;
+    flex-direction: column;
+    // object-fit: contain;
+    flex: 1;
+    // min-width: 100%;
+    // max-width: 100;
+    // justify-content: center;
+  }
+  &-row {
+    display: flex;
+    // min-width: 100%;
+    // max-width: 100;
+    // flex: 1;
+  }
+  &-grow {
+    flex: 1;
+    // min-width: 100%;
+    // max-width: 100;
+
+    // object-fit: contain;
+  }
+}
+
+// .scale-down {
+//   max-width: 100;
+//   height: auto;
+// }
