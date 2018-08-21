@@ -1,32 +1,7 @@
 import React, { Component } from 'react';
 import { suitz, suitsCard, coffeeFindr } from '../img';
 import { react, node, psql, googleMaps, fireBase } from './techIcons/index';
-// const portfolio = () => (
-//   <section className="portfolio ">
-//     <header className="center portfolio-header teal lighten-4">
-//       My Portfolio
-//     </header>
-//     <div className="portfolio-items">
-//       <div className="portfolio-item">
-//         <img src={suitz} alt="" className="portfolio-image responsive-img" />
-//       </div>
-//       <div className="portfolio-item">
-//         <img
-//           src={suitsCard}
-//           alt=""
-//           className="portfolio-image responsive-img"
-//         />
-//       </div>
-//       <div className="portfolio-item">
-//         <img
-//           src={coffeeFindr}
-//           alt=""
-//           className="portfolio-image responsive-img"
-//         />
-//       </div>
-//     </div>
-//   </section>
-// );
+
 document.addEventListener('DOMContentLoaded', function() {
   let elems = document.querySelectorAll('.modal');
   let instances = M.Modal.init(elems);
@@ -44,7 +19,7 @@ export class portfolio extends Component {
 
   render() {
     return (
-      <section className="portfolio ">
+      <section className="portfolio" id="work">
         <header className="center portfolio-header teal lighten-4">
           My Portfolio
         </header>
@@ -86,11 +61,13 @@ export class portfolio extends Component {
               React/Redux on the front end, Express for the backend with
               postgreSQL with Sequelize as the ORM, and deployed on heroku
             </p>
-            <img
-              src={suitz}
-              alt="portfolio item 1"
-              className="portfolio-image responsive-img"
-            />
+            <a href="https://suitz.herokuapp.com/">
+              <img
+                src={suitz}
+                alt="portfolio item 1"
+                className="portfolio-image responsive-img"
+              />
+            </a>
           </div>
           <div className="modal-footer">
             <a
@@ -103,45 +80,58 @@ export class portfolio extends Component {
         </div>
         <div id="modal2" className="modal">
           <div className="modal-content">
-            <h4>Modal Header</h4>
+            <h4>Suits - Card Game Generator</h4>
 
-            <p>A bunch of text</p>
-            <img
-              src={suitsCard}
-              alt="portfolio item 2"
-              className="portfolio-image responsive-img"
-            />
+            <p>
+              A double interfaced card game generator, which allows a user to
+              scaffold out rules for a game, allow them to to choose the amount
+              of players, how the phases of a turn play out, and how the game is
+              won. The game runs on a validator function and is built on
+              React/Node and Firebase.
+            </p>
+            <a href="https://suits-card-generator.firebaseapp.com/">
+              <img
+                src={suitsCard}
+                alt="portfolio item 2"
+                className="portfolio-image responsive-img"
+              />
+            </a>
           </div>
           <div className="modal-footer">
             <a
-              href="#!"
+              href="https://www.youtube.com/watch?v=GQEp18eyhEo"
               className="modal-close waves-effect waves-green btn-flat"
             >
-              Agree
+              View Presentation!
             </a>
           </div>
         </div>
         <div id="modal3" className="modal">
           <div className="modal-content">
-            <h4 className="modal-header">Modal Header</h4>
-            <div className="flex-row">
-              <div className="flex-col flex-grow">
-                <img
-                  src={coffeeFindr}
-                  alt=""
-                  className="portfolio-image responsive-img"
-                />
-                <p> hi there just random stuff</p>
-              </div>
-              <div className="flex-col flex-grow">
-                <div className="flex-row flex-grow">
-                  <img className="scale-down" src={fireBase} alt="" />
-                </div>
-                <div className="flex-row flex-grow">
-                  <img className="scale-down" src={fireBase} alt="" />
-                </div>
-              </div>
-            </div>
+            <h4>Coffee Findr</h4>
+
+            <p>
+              A webapp built in React, using the google maps API to find the
+              five closest coffee shops to the user's device location or by
+              dropping a pin, the user can then get the walking distance/time
+              for each coffee shop by clicking the coffee cups that show up on
+              the map.
+            </p>
+            <a href="https://www.youtube.com/watch?v=2-PhtikiXgE">
+              <img
+                src={coffeeFindr}
+                alt="portfolio item 2"
+                className="portfolio-image responsive-img"
+              />
+            </a>
+          </div>
+          <div className="modal-footer">
+            <a
+              href="https://www.youtube.com/watch?v=2-PhtikiXgE"
+              className="modal-close waves-effect waves-green btn-flat"
+            >
+              View Presentation!
+            </a>
           </div>
         </div>
       </section>

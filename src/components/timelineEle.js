@@ -11,12 +11,12 @@ const timelineEle = ({ title, text, direction, hidden, icon }) => {
         <div className="card-content">
           <span className="card-title activator grey-text text-darken-4">
             {title}
-          </span>
-          <div className="row">
-            <div className="col s12">
-              <img src={icon} alt="education" />
+            <div className="row">
+              <div className="col s12">
+                <img src={icon} alt="education" />
+              </div>
             </div>
-          </div>
+          </span>
 
           <p>{text}</p>
         </div>
