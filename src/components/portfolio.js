@@ -5,6 +5,8 @@ import { react, node, psql, googleMaps, fireBase } from './techIcons/index';
 document.addEventListener('DOMContentLoaded', function() {
   let elems = document.querySelectorAll('.modal');
   let instances = M.Modal.init(elems);
+  console.log(M);
+  console.log(instances);
 });
 
 export class portfolio extends Component {
@@ -17,6 +19,7 @@ export class portfolio extends Component {
     };
   }
 
+  componentDidMount() {}
   render() {
     return (
       <section className="portfolio" id="work">

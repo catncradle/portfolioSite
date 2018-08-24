@@ -1,11 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import VerticalTimelineElement from './verticalTimelineEle';
 import Materialize from '../layouts/materialize-src/js/bin/materialize';
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.collapsible');
-  var instances = Materialize.Collapsible.init(elems);
-});
 
 const timeline = [
   {
@@ -41,14 +37,32 @@ const timeline = [
   },
 ];
 
-const Timeline = () => {
-  return (
-    <VerticalTimeline>
-      {timeline.map((event, idx) => {
-        return <VerticalTimelineElement key={idx} {...event} />;
-      })}
-    </VerticalTimeline>
-  );
-};
+// const Timeline = () => {
+//   return (
+//     <VerticalTimeline>
+//       {timeline.map((event, idx) => {
+//         return <VerticalTimelineElement key={idx} {...event} />;
+//       })}
+//     </VerticalTimeline>
+//   );
+// };
+
+class Timeline extends Component {
+  componentDidMount() {
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = Materialize.Collapsible.init(elems);
+    });
+  }
+  render() {
+    return (
+      <VerticalTimeline>
+        {timeline.map((event, idx) => {
+          return <VerticalTimelineElement key={idx} {...event} />;
+        })}
+      </VerticalTimeline>
+    );
+  }
+}
 
 export default Timeline;

@@ -10,13 +10,13 @@ const footer = () => (
           <span>would you like to reach out?</span>
         </div>
         <div className="flex-row">
-          <a>
+          <a href="https://medium.com/@jacklye">
             <img src={medium} className="footer-icons" alt="" />
           </a>
-          <a>
+          <a href="https://github.com/catncradle">
             <img className="footer-icons" src={github} alt="github" />
           </a>
-          <a>
+          <a href="https://www.linkedin.com/in/jacklye/">
             <img src={linkedin} alt="" className="footer-icons" />
           </a>
           <a>
