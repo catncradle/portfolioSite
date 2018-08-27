@@ -13,4 +13,56 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
       loader: 'null-loader',
     });
   }
+  if (stage === 'develop') {
+    config.loader('null', {
+      test: /lazysizes/,
+      loader: 'null-loader',
+    });
+  }
+  if (stage === 'build-css') {
+    config.loader('null', {
+      test: /lazysizes/,
+      loader: 'null-loader',
+    });
+  }
+  if (stage === 'build-javascript') {
+    config.loader('null', {
+      test: /lazysizes/,
+      loader: 'null-loader',
+    });
+  }
 };
+
+// exports.modifyWebpackConfig = ({ config, stage }) => {
+//   switch (stage) {
+//     case "develop":
+//       config.loader("css", {
+//         include: /flexboxgrid/,
+//       });
+
+//       break;
+
+//     case "build-css":
+//       config.loader("css", {
+//         include: /flexboxgrid/,
+//       });
+
+//       break;
+
+//     case "build-html":
+//       config.loader("css", {
+//         include: /flexboxgrid/,
+//       });
+
+//       break;
+
+//     case "build-javascript":
+//       config.loader("css", {
+//         include: /flexboxgrid/,
+//       });
+
+//       break;
+//   }
+
+//   return config;
+// };

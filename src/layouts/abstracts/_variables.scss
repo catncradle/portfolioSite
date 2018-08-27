@@ -22,3 +22,30 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 6rem;
 $gutter-horizontal: 4rem;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
+
+$break-small: 42rem;
+$break-large: 120rem;

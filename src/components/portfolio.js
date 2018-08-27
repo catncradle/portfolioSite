@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { suitz, suitsCard, coffeeFindr } from '../img';
 import { react, node, psql, googleMaps, fireBase } from './techIcons/index';
-
-document.addEventListener('DOMContentLoaded', function() {
-  let elems = document.querySelectorAll('.modal');
-  let instances = M.Modal.init(elems);
-  console.log(M);
-  console.log(instances);
-});
+const Materialize =
+  typeof window !== `undefined`
+    ? require('../layouts/materialize-src/js/bin/materialize')
+    : null;
 
 export class portfolio extends Component {
   constructor(props) {
@@ -19,7 +16,13 @@ export class portfolio extends Component {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    console.log('here');
+
+    console.log('here');
+    let elems = document.querySelectorAll('.modal');
+    let instances = Materialize.Modal.init(elems);
+  }
   render() {
     return (
       <section className="portfolio" id="work">

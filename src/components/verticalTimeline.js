@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import VerticalTimelineElement from './verticalTimelineEle';
-import Materialize from '../layouts/materialize-src/js/bin/materialize';
+const Materialize =
+  typeof window !== `undefined`
+    ? require('../layouts/materialize-src/js/bin/materialize')
+    : null;
+
+// if (typeof window !== `undefined`) {
+//   Materialize  = require('../layouts/materialize-src/js/bin/materialize');
+// }
 
 const timeline = [
   {
